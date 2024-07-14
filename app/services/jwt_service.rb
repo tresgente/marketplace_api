@@ -9,4 +9,3 @@ def self.decode(token)
 rescue JWT::DecodeError
   nil
 end
-end

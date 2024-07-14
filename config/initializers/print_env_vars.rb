@@ -1,0 +1,6 @@
+puts "Environment Variables:"
+puts "DB_NAME: #{ENV['DB_NAME'].inspect}"
+puts "DB_USER: #{ENV['DB_USER'].inspect}"
+puts "DB_HOST: #{ENV['DB_HOST'].inspect}"
+puts "DB_PORT: #{ENV['DB_PORT'].inspect}"
+puts "RAILS_ENV: #{ENV['RAILS_ENV'].inspect}"
