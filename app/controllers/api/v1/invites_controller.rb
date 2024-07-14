@@ -1,4 +1,3 @@
-# app/controllers/api/v1/invites_controller.rb
 module Api
   module V1
     class InvitesController < ApplicationController
@@ -12,6 +11,11 @@ module Api
         else
           render json: { errors: invite.errors.full_messages }, status: :unprocessable_entity
         end
+      end
+
+      def index
+      invite = Invite.all
+        render json: invite
       end
 
       private
